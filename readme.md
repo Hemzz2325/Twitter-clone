@@ -1,1 +1,1 @@
-this twitter clone using tailwind Css
+This XTwitter clone using Tailwind CSS 
