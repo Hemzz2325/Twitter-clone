@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="bg-black text-white">
+  <div class="md:container flex mx-auto my-4">
+    <div class="first w-16 md:w-[50%]">
+      <div class="sidebar flex items-start md:items-start w-[40%] flex-col justify-start items-center">
+        <div class="logo invert my-4 self-start mx-2 md:mx-16">
+
+          <svg viewBox="0 0 24 24" aria-hidden="true"
+            class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+              </path>
+            </g>
+          </svg>
+
+        </div>
+        <div class="logo my-4 self-start mx-2 md:mx-16"><svg viewBox="0 0 24 24" aria-hidden="true"
+            class=" w-10 m-auto  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk">
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+              </path>
+            </g>
+          </svg>
+
+
+          <ul class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full">
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-2xl material-symbols-outlined"> home </span> <span class="hidden md:block">Home</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> search </span><span
+                class="hidden md:block">Explore</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> notifications </span><span
+                class="hidden md:block">Notifications</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> message </span><span class="hidden md:block">Grok</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> lists </span><span class="hidden md:block">Lists</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> bookmarks </span><span
+                class="hidden md:block">Bookmarks</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> Group </span><span
+                class="hidden md:block">Communities</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> box </span><span class="hidden md:block">Premium</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> person </span><span
+                class="hidden md:block">Profile</span>
+            </li>
+            <li
+              class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+              <span class="text-3xl material-symbols-outlined"> pending </span><span class="hidden md:block">More</span>
+            </li>
+
+          </ul>
+
+          <div class="w-full text-center my-3">
+            <div class="button"><button
+                class="bg-blue-600 text-white px-20 text-2xl font-medium rounded-full py-3 "><span
+                  class="material-symbols-outlined">
+                  edit
+                </span>Post</button>
+
+              <div class="profile w-full  justify-end mx-10 hidden md:block mt-300">
+                <div
+                  class="item  px-3 p-4 hover:bg-gray-800  flex  items-center  gap-2 hover:bg-gray-500 hover:cursor-pointer hover:rounded-full">
+                  <div class="p1 w-[20%] px-1 gap-3 "><img
+                      src="https://pbs.twimg.com/profile_images/989513875124117504/UNMIb20k_bigger.jpg" alt=""></div>
+                  <div class=" gap-3  ">
+                    <div class="text-lg flex justify-start">Hemzz</div>
+                    <div class="text-sm text-gray-600">@hemanthbaraker</div>
+
+
+
+                    <!-- <div class="text-2xl ">...</div> -->
+
+                  </div>
+                  <div class="flex justify-end text-3xl mb-7 mx-10 ">...</div>
+                </div>
+
+
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="second w-full border-[1px] border-x-gray-600 border-y-black">
+      <div class="top flex  p-3  sticky top-0  bg-black backdrop-blur-3xl opacity-80 ">
+        <div class="h-1 absolute bottom-0 left-[18%] w-16 bg-blue-500 rounded-full z-10"></div>
+        <div class="right flex w-1/2 justify-center text-lg font-bold">For You</div>
+        <div class="left flex w-1/2 justify-center text-lg font-bold">Following</div>
+        <div class="setting"><span class="material-symbols-outlined"> settings </span></div>
+      </div>
+
+      <div class="h-[1px] w-full bg-gray-700"></div>
+
+      <div class="foryou flex gap-4 my-3">
+        <div class="img m-3"> <img src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_bigger.png"
+            alt=""></div>
+
+        <div w-full my-5>
+          <input class="w-full bg-black text-white my-5 mx-3 text-xl h-7 Outline-none" type="text"
+            placeholder="What is Happening?">
+
+          <div class="text-blue-500 flex  mx-3 gap-3 items-center w-full my-4">
+            <span class="material-symbols-outlined">public</span>
+            <span class="font-bold">Everyone can Reply</span>
+
+          </div>
+
+          <div class="w-[90%] h-[0.2px] bg-gray-700 my-5 mx-5"></div>
+          <div class="blueicons flex gap-3 mx-5 text-blue-500 justify-between">
+            <span class="material-symbols-outlined">
+              image
+            </span>
+            <span class="material-symbols-outlined cursor-pointer">
+              gif_box
+            </span>
+            <span class="material-symbols-outlined cursor-pointer">
+              article
+            </span>
+            <span class="material-symbols-outlined cursor-pointer">
+              add_reaction
+            </span><span class="material-symbols-outlined cursor-pointer">
+              calendar_clock
+            </span><span class="material-symbols-outlined cursor-pointer">
+              pin_drop
+            </span>
+            <div class="flex gap-2"></div>
+            <div class="postbtn  ">
+              <button class="bg-[#1d9bf0] px-10 mx-10  text-sm rounded-full py-2 text-white font-bold">Post</button>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- <div class="w-full h-[0.2px] bg-gray-700 my-5  "></div> -->
+      <!-- <hr class="bg-gray-700"> -->
+
+      <div class="post">
+        <div class="posts border-[1px] border-y-gray-600 border-x-0">
+          <div class="flex">
+            <div class="image m-4">
+              <img class="w-16 " src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_bigger.png"
+                alt="">
+            </div>
+            <div class="content my-3">
+              <span class="font-bold text-lg m-auto px-2 hover:underline gap-3">
+                Hemzz
+                <span class="text-gray-500 font-bold "> @hemanthbaraker</span>
+                ·
+                23h</span>
+              <div class="m-auto px-2 text-white">"In the ninja world, those who break the rules are scum, that's true,
+                but those who abandon their friends are worse than scum."</div>
+              <div class="postimg m-4 mx-2 my-4 ml-0">
+                <img class="w-[70%] mx-auto rounded-lg"
+                  src="https://pbs.twimg.com/media/GqypSMvW4AAVlU_?format=jpg&name=900x900" alt="">
+              </div>
+              <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-600">
+                <div
+                  class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    chat_bubble
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    repeat
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-pink-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    Favorite
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-gray-500  hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    bar_chart
+                  </span> 1k
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- hfjh -->
+      <div class="post">
+        <div class="posts border-[1px] border-y-gray-600 border-x-0">
+          <div class="flex">
+            <div class="image m-4">
+              <img class="w-16 " src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_bigger.png"
+                alt="">
+            </div>
+            <div class="content my-3">
+              <span class="font-bold text-lg m-auto px-2 hover:underline gap-3">
+                Hemzz
+                <span class="text-gray-500 font-bold "> @hemanthbaraker</span>
+                ·
+                23h</span>
+              <div class="m-auto px-2 text-white">"In the ninja world, those who break the rules are scum, that's true,
+                but those who abandon their friends are worse than scum."</div>
+              <div class="postimg m-4 mx-2 my-4 ml-0">
+                <img class="w-[70%] mx-auto rounded-lg"
+                  src="https://pbs.twimg.com/media/GqypSMvW4AAVlU_?format=jpg&name=900x900" alt="">
+              </div>
+              <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-600">
+                <div
+                  class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    chat_bubble
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    repeat
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-pink-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    Favorite
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    bar_chart
+                  </span> 1k
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- <div class="w-full h-[0.2px] bg-gray-700 my-5  "></div> -->
+
+      <div class="post">
+        <div class="posts ">
+          <div class="flex">
+            <div class="image m-4">
+              <img class="w-16 " src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_bigger.png"
+                alt="">
+            </div>
+            <div class="content my-3">
+              <span class="font-bold text-lg m-auto px-2 hover:underline gap-3">
+                Hemzz
+                <span class="text-gray-500 font-bold ">@hemanthbaraker</span>
+                ·
+                23h</span>
+              <div class="m-auto px-2 text-white">"In the ninja world, those who break the rules are scum, that's true,
+                but those who abandon their friends are worse than scum."</div>
+              <div class="postimg m-4 mx-2 my-4 ml-0">
+                <img class="w-[70%] mx-auto rounded-lg"
+                  src="https://pbs.twimg.com/media/GqypSMvW4AAVlU_?format=jpg&name=900x900" alt="">
+              </div>
+              <div class="icons flex justify-between mx-4 my-4 text-sm text-gray-600">
+                <div
+                  class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    chat_bubble
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    repeat
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-pink-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    Favorite
+                  </span> 1k
+                </div>
+                <div
+                  class="icon flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 hover:cursor-pointer">
+                  <span class="material-symbols-outlined">
+                    bar_chart
+                  </span> 1k
+                </div>
+
+
+
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="third  w-[70%] hidden  md:block">
+      <div class="search m-3">
+
+        <input type="text" class="w-full rounded-full bg-[#16181c] text-white text-2xl  py-3" placeholder=" Search">
+      </div>
+      <div class="what m-4 p-5 rounded-xl bg-[#16181c] w-[70%] py-5 space-y-3 sticky">
+        <h1 class="text-2xl font-bold px-3">What's Happening</h1>
+        <div class="item my-3 px-5 p-4 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-20 text-xl">Trending in India</div>
+          <div class="font-bold">#Grur Ranadwan</div>
+          <div>Ind vs pakistan War!</div>
+          <div class=" text-sm text-gray-200">40.2k Posts</div>
+        </div>
+        <div class="item my-3 px-5 p-4 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-200 text-xl">Met Gala's News</div>
+          <div class="font-bold">#SRK solid Look</div>
+          <div>IPL cancel's due to War!</div>
+          <div class=" text-sm text-gray-200">40.2k Posts</div>
+        </div>
+        <div class="item my-3 px-5 p-4 hover:bg-gray-800 cursor-pointer">
+          <div class="text-sm text-gray-200 text-xl">Instagrams Trending</div>
+          <div class="font-bold"># Banushali performs at BVB Hubli</div>
+          <div>War Updates: S-400 Defence!</div>
+          <div class=" text-sm text-gray-200">40.2k Posts</div>
+        </div>
+
+
+      </div>
+
+      <div class="follow sticky top-0 m-4 rounded-xl bg-[#16181c] py-5 w-[70%] space-y-2">
+
+        <h1 class="text-2xl text-gray-200  font-bold my-3 ">Who To Follow </h1>
+
+        <div
+          class="item  px-3 p-4 hover:bg-gray-800  flex  items-center justify-around gap-2 hover:bg-gray-500 hover:cursor-pointer hover:rounded-full">
+          <div class="p1 w-[15%] px-1 gap-3"><img
+              src="https://registry.npmmirror.com/@lobehub/icons-static-png/1.46.0/files/dark/vercel.png" alt=""></div>
+          <div class="p2 gap-3 ">
+            <div class="text-lg font-medium">Vercel</div>
+            <div class="text-sm text-gray-600">@Vercel</div>
+          </div>
+          <div class="p3 px-5 ">
+            <button
+              class="bg-white text-black  px-10 py-3 rounded-full font-bold hover:bg-[rgb(29, 155, 240)]; hover:cursor-pointer">Follow</button>
+          </div>
+
+
+        </div>
+        <div
+          class="item  px-3 p-4 hover:bg-gray-800  flex  items-center justify-around gap-2 hover:bg-gray-500 hover:cursor-pointer hover:rounded-full">
+          <div class="p1 w-[15%] px-1 gap-3"><img
+              src="https://pbs.twimg.com/profile_images/989513875124117504/UNMIb20k_bigger.jpg" alt=""></div>
+          <div class="p2 gap-3 ">
+            <div class="text-lg font-medium">Vercel</div>
+            <div class="text-sm text-gray-600">@Vercel</div>
+          </div>
+          <div class="p3 flex px-5 ">
+            <button class="bg-white text-black  px-10 py-3 rounded-full font-bold">Follow</button>
+          </div>
+
+
+        </div>
+        <div
+          class="item  px-3 p-4 hover:bg-gray-800  flex  items-center justify-around gap-2 hover:bg-gray-500 hover:cursor-pointer hover:rounded-full">
+          <div class="p1 w-[15%] px-1 gap-3"><img
+              src="https://pbs.twimg.com/profile_images/989513875124117504/UNMIb20k_bigger.jpg" alt=""></div>
+          <div class="p2 gap-3 ">
+            <div class="text-lg font-medium">Vercel</div>
+            <div class="text-sm text-gray-600">@Vercel</div>
+          </div>
+          <div class="p3 flex px-5 ">
+            <button class="bg-white text-black  px-10 py-3 rounded-full font-bold">Follow</button>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="terms sticky flex top-[200vh] m-3 text-md text-gray-500 px-3  py-5   space-y-1 ">
+        Terms of Service
+        |
+        Privacy Policy
+        |
+        Cookie Policy
+        |
+        Accessibility
+        |
+        Ads info
+        |
+
+        More
+        © 2025 X Corp.
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
